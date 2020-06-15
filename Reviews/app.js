@@ -20,6 +20,13 @@ const reviews=[
         img:"images/LBJ.png",
         text:" LBJ is the best SF of the all time. He wins 3 champion and he is incredible all-around player."
     },
+    {
+        id:4,
+        name:"Damian Lillard",
+        job:"Point Guard",
+        img:"images/DL.png",
+        text:" DL is Blazers francise PG. He is 5-time All-Star and he won ROTY over AD and All-NBA First Team in 2018."
+    }
     
 ]
 //select item
