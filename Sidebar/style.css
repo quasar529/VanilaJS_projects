@@ -1,0 +1,23 @@
+ul{
+    list-style: none;
+}
+body img{
+    width:2rem;
+    height: 2rem;
+    background: transparent;
+    border-color: transparent;
+}
+.sidebar{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 1rem;
+    transform: translate(-100%);
+}
+.show-sidebar{
+    transform: translate(0);
+}
