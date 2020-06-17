@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Do Hyeon', sans-serif;
+    background: rgb(221, 241, 102,0.3);
+}
+.title{
+    border-bottom: 1px solid greenyellow;
+    text-align: center;
+    padding: 2rem;
+    font-size:2rem;
+    font-style: italic;
+    color:rgba(0, 255, 128, 0.33);
+}
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2rem 2rem;
+}
+.btn-container button{
+    background: transparent;
+    border: 1px solid greenyellow;
+    padding:0.5rem 0.5rem;
+    border-radius: 10px;
+    color: yellowgreen;
+    font-size:1rem;
+    font-weight: bold;
+}
+.section-center{
+
+
+}
+.section-center .menu-item{
+    align-items: center;
+    padding: 1rem 0;
+    text-align: center;
+}

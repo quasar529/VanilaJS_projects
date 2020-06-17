@@ -40,12 +40,56 @@ const menu=[
         img:"images/item5.jpg",
         desc:"[제주지역 한정음료] 제주 까망 라떼의 프라푸치노 버전으로 쫄깃한 국내산 흑임자 떡과 블랙 소보로 토핑으로 컵빙수처럼 먹는 음료. 고소한 국내산 흑임자와 쫄깃한 국내산 흑임자 떡, 달콤한 블랙 소보로 토핑으로 제주의 돌 하르방 길을 느껴보세요.",
     },
+    {
+        id:6,
+        title:"Starbucks Lime Mojito Tea",
+        category:"Tea",
+        price:6100,
+        img:"images/item6.jpg",
+        desc:"라임과 사과 과즙이 팡팡 터지는 맑고 청량한 스타벅스 라임 모히토 티와 함께 가장 가까운 여름 휴가를 누리세요.",
+    },
 ];
 
 const sectionCenter=document.querySelector(".section-center");
 
+const filterBtns=document.querySelectorAll(".filter-btn");
+
+const btnContainer=document.querySelector(".btn-container");
 window.addEventListener("DOMContentLoaded",function(){
-    let displayMenu=menu.map(function(item){
+    displayBtns();
+    displayMenuItems(menu);
+})
+
+filterBtns.forEach(function(btn){
+    btn.addEventListener('click',function(event){
+        const category=event.currentTarget.dataset.id;
+        const menuCategory=menu.filter(function(menuItem){
+            if(menuItem.category===category){
+                return menuItem;
+            }
+        });
+        console.log(category, menuCategory);
+        //displayMenuItems(menuCategory);
+        if(category==='all'){
+            displayMenuItems(menu);
+        }else{
+            displayMenuItems(menuCategory);
+        }
+    });
+})
+
+
+function displayBtns(){
+    let displayBtn=menu.map(function(item){
+        return ` <button class="filter-btn" type="button" data-id=${item.category}>${item.category}</button>`;
+    });
+    console.log(displayBtn);
+    displayBtn=displayBtn.join("");
+    btnContainer.innerHTML=displayBtn;
+}
+
+function displayMenuItems(menuItems){
+    let displayMenu=menuItems.map(function(item){
         return ` <article class="menu-item">
         <img src=${item.img} class="photo" alt=${item.title}>
         <div class="item-info">
@@ -59,4 +103,7 @@ window.addEventListener("DOMContentLoaded",function(){
         </div>
      </article>`
     })
-})
+
+    displayMenu=displayMenu.join("");
+    sectionCenter.innerHTML=displayMenu;
+}
