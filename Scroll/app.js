@@ -36,5 +36,22 @@ window.addEventListener('scroll',function(){
         navBar.classList.remove('fixed-nav'); 
         topLink.classList.remove('show-links')  
     }
-    
+})
+
+//************smooth scroll*****************/
+//slice
+const scrollLinks=document.querySelectorAll('.scroll-links');
+scrollLinks.forEach(function(link){
+    link.addEventListener('click',function(e){
+        e.preventDefault();
+
+        const id=e.currentTarget.getAttribute('href').slice(1);
+        const element=document.getElementById(id);
+        let position=element.offsetTop;
+        window.scrollTo({
+            left:0,
+            top:100,
+        })
+    }); 
+
 })
