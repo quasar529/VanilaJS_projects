@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Do Hyeon', sans-serif;
+    line-height: 1.5rem;
+    text-align: center;
+    background:#555 ;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+header{
+    background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),url(images/mountain2.jpg) center/cover no-repeat;
+    height: 100vh;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0;
+    color:#eee;
+}
+h1, h2{
+    text-transform: uppercase;
+    color:white
+}
+.section h2{
+    margin:5rem 0;
+    padding: 5rem 0;
+}
+p{
+    padding:1rem 1rem;
+    margin:1rem 2rem;
+}
+.fixed-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background:#EEE;
+    box-shadow: #EEE 2px 2px 2px 2px;
+}
+.nav-center{
+
+}
+.nav-header img, .nav-header button{
+    width: 100px;
+    background: transparent;
+    border: transparent;
+}
+.nav-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.links-container{
+    height: 0;
+    overflow: hidden;
+
+}
+.links a{
+    font-size: 2rem;
+    display: block;
+    font-weight: bold;
+    padding:1rem 0;
+}
+
+.top-link{
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+    z-index: -100;
+    animation: bounce 2.4s ease-in-out infinite;
+}
+.show-links{
+    z-index: 100;
+    visibility: visible;
+ }
+
+@media(min-width:800px){
+    .nav-center{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-toggle{
+        display: none;
+    }
+    .logo{
+        margin:0 1rem;
+    }
+    .links-container{
+        height: auto !important;
+        background-color: transparent;
+    }
+    .links{
+        display: flex;
+        padding: 1rem 1rem;
+        margin: 0 1rem;
+        
+    }
+    .links li{
+        padding: 1rem;
+
+    }
+}
+@keyframes bounce{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

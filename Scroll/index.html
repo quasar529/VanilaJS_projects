@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="home">
+        <!--navbar-->
+        <nav id="nav">
+            <div class="nav-center">
+                <div class="nav-header">
+                    <img src="images/escLogo.png" alt="logo" class="logo"/>
+                    <button class="nav-toggle">
+                        <img src="images/navtoggle.png" alt="toggle"/>
+                    </button>
+                </div>
+                <!--links-->
+                <div class="links-container">
+                    <ul class="links">
+                        <li>
+                            <a href="#home" class="scroll-links">home</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="scroll-links">about</a>
+                        </li>
+                        <li>
+                            <a href="#project" class="scroll-links">project</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="scroll-links">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="banner" >
+            <div class="container">
+                <h1>Scroll Project</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                    elit. Vero eius adipisci a commodi inventore doloremque 
+                    accusantium officia nisi, saepe distinctio.</p>
+                    <a href="#project" class="scroll-links btn btn-white"><h3>Projects</h3></a>
+            </div>    
+        </div>
+    </header>
+    <section id="about" class="section">
+        <div class="title">
+            <h2>about <span>us</span></h2>
+        </div>
+    </section>
+    <section id="project" class="section">
+        <div class="title">
+            <h2>projcet <span>us</span></h2>
+        </div>
+    </section>
+    <section id="about" class="section">
+        <div class="title">
+            <h2>contact <span>us</span></h2>
+        </div>
+    </section>
+    <!--footer-->
+    <footer class="section">
+        <p>copyright
+            <span id="date"></span>
+            .all rights reserved
+        </p>
+    </footer>
+    <!--back to top-->
+    <a href="#home" class="scroll-link top-link">
+        Top
+    </a>
+    <script src="app.js"></script>
+</body>
+</html>
