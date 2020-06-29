@@ -6,6 +6,10 @@
     width: 80%;
     margin: 0 auto;
 }
+.about-img img {
+    object-fit: cover;
+    height: 20rem;
+}
 .btn-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
