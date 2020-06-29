@@ -1,0 +1,32 @@
+.title{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.title p{
+    width: 80%;
+    margin: 0 auto;
+}
+.btn-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.section-center{
+    width: 90vw;
+    margin: 0 auto;
+}
+.about{
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+.about-content{
+    padding: 2rem 1.5rem;
+}
+.content.active{
+    display: block;
+}
+.content{
+    display: none;
+}
+.tab-btn.active{
+    background: transparent;
+}
