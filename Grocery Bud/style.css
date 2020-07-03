@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    background:#e5adff ;
+}
+button{
+    background: transparent;
+}
+.section-center{
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.grocery-form{
+    position: relative;
+
+}
+.grocery-form h3{
+    font-size: 3rem;
+    margin-bottom: 10vh;
+}
+.form-control input{
+    font-size: 1.5rem;
+    border-radius: 7px;
+}
+.submit-btn{
+    border-radius: 20px;
+    width: auto;
+    font-size: 1.2rem;
+    padding: 0.5vh;
+    text-transform: uppercase;
+}
+.submit-btn:hover{
+    color: whitesmoke;
+    background-color: cadetblue;
+}
+
+.alert-danger{
+    color:rgb(223, 24, 24);
+    background: rgb(207, 168, 168);
+}
+.alert-success{
+    color: rgb(55, 55, 228);
+    background: rgb(154, 154, 240);
+}
+
+.edit-btn,.delete-btn{
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+.edit-btn:hover,.delete-btn:hover{
+    transform: scale(1.2);
+}
+.edit-btn-icon, .delete-btn-icon{
+    width: 2rem;
+}
+.grocery-list{
+    font-size: 1.3rem;
+}
+
+.clear-btn{
+    border-radius: 10px;
+    width: auto;
+    font-size: 1.2rem;
+    padding: 0.5vh;
+    text-transform: uppercase;
+}
+.clear-btn:hover{
+    color: whitesmoke;
+    background-color: cadetblue;
+}
+.grocery-container{
+    margin-top: 2rem;
+    visibility: hidden;
+}
+.show-container{
+    visibility: visible;
+}
