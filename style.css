@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Do Hyeon", sans-serif;
+}
+ul {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  color: #111;
+}
+ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ul li a:hover {
+  opacity: 0.5;
+}
+.title {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+.title h1 {
+  font-size: 5rem;
+  padding: 2vh 0;
+  color: #ffe200;
+}
+.title h3 {
+  line-height: 4rem;
+}
+.link-container ul {
+  height: 100vh;
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+  grid-gap: 1vw/2vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+}
+ul li img {
+  width: 20vw;
+  height: 20vh;
+}

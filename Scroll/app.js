@@ -40,18 +40,29 @@ window.addEventListener('scroll',function(){
 
 //************smooth scroll*****************/
 //slice
-const scrollLinks=document.querySelectorAll('.scroll-links');
+const scrollLinks=document.querySelectorAll('.scroll-link');
 scrollLinks.forEach(function(link){
     link.addEventListener('click',function(e){
         e.preventDefault();
 
         const id=e.currentTarget.getAttribute('href').slice(1);
         const element=document.getElementById(id);
-        let position=element.offsetTop;
+        
+        //calculate height
+        const navHeight=navBar.getBoundingClientRect().height;
+        const containerHeight=linksContainer.getBoundingClientRect().height;
+        let position=element.offsetTop-navHeight;
+        const fixedNav=navBar.classList.contains("fixed-nav");
+        if(!fixedNav){
+            position=position-navHeight;
+        }
+        if(navHeight>82){
+            position=position+containerHeight;
+        }
         window.scrollTo({
             left:0,
-            top:100,
-        })
+            top:position,
+        });
+        linksContainer.style.height=0;
     }); 
-
-})
+});

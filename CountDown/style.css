@@ -1,25 +1,29 @@
-
 .section-center {
-    width: 90vw;
-    max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.movie-img{
-    
+.movie-img img {
+  width: 50vw;
 }
-.deadline-format{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    place-items: center;
-    font-size: 2rem;
+.movie-info {
+  text-align: center;
 }
-.deadline-format div{
-    border: 1px solid slateblue;
-    padding: 1.5rem 2rem;
+.deadline-format {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  place-items: center;
+  font-size: 2rem;
 }
-.deadline-format span{
-    text-transform: uppercase;
-    font-size: 1.25rem;
+.deadline-format div {
+  border: 1px solid slateblue;
+  padding: 1.5rem 2rem;
+}
+.deadline-format span {
+  text-transform: uppercase;
+  font-size: 1.25rem;
 }

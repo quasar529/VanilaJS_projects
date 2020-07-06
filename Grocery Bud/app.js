@@ -21,33 +21,6 @@ clearBtn.addEventListener('click',clearItems);
 //load items
 window.addEventListener('DOMContentLoaded',setupItems);
 //functions
-// function bringList(){
-//     const items=JSON.parse(localStorage.getItem('list'));
-//     console.log(items);
-
-//     for(let i=0;i<items.length;i++){
-//         let element=document.createElement('article');
-//         //add class
-//         element.classList.add('grocery-item');
-//         //add id
-//         const attr=document.createAttribute('data-id');
-//         attr.value=items[i].id;
-//         element.setAttributeNode(attr);
-//         element.innerHTML=` <p class="title">${items[i].value}</p>
-//         <div class="btn-container">
-//             <button class="edit-btn" type="button">
-//                 <img src="images/edit.png" class="edit-btn-icon"></img>
-//             </button>
-//             <button class="delete-btn" type="button">
-//                 <img src="images/delete.png" class="delete-btn-icon"></img>
-//             </button>
-//         </div>`;
-//         list.appendChild(element);
-//         console.log(element);
-//     }
-//     container.classList.add("show-container");
-// }
-
 
 function addItem(e){
     e.preventDefault();
